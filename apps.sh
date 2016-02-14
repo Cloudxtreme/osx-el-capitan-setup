@@ -1,39 +1,42 @@
 apps=(
   alfred
-  dropbox
-  google-chrome
   appcleaner
-  firefox
-  spotify
-  iterm2
-  flux
-  vlc
-  nvalt
-  transmission
-  little-snitch
-  flash-player
-  endurance
-  sublime-text
-  bartender
-  seil
-  karabiner
-  sourcetree
-  infinit
   backblaze
+  bartender
+  beardedspice
+  cheatsheet
+  cyberduck
+  dropbox
+  endurance
+  eve
+  firefox
+  flash-player
+  flux
+  git
+  google-chrome
+  infinit
+  iterm2
+  karabiner
+  little-snitch
+  league-of-legends
   logitech-control-center
   logitech-unifying
-  cheatsheet
-  eve
-  slate
-  beardedspice
+  macdown
   mysqlworkbench
   node
-  git
-  cyberduck
+  nvalt
   qlcolorcode
-  qlstephen
   qlmarkdown
+  qlstephen
   quicklook-json
+  seil
+  silverlight
+  slate
+  sourcetree
+  spotify
+  sublime-text
+  transmission
+  vlc
 )
 
 echo "installing apps."

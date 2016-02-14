@@ -64,7 +64,17 @@ brew tap homebrew/dupes
 brew install homebrew/dupes/grep
 
 echo "Export path for coreutils"
-export $PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
+export PATH=$(brew --prefix coreutils)/libexec/gnubin:$PATH
+
+echo ""
+echo "Have you set up an ssh key for Git?  (y/n)"
+read -r response
+if [[ ! $response =~ ^([yY][eE][sS]|[yY])$ ]]; then
+    ssh-keygen -t rsa -C "jeremyemiller@gmail.com"
+    #copy ssh key to clipboard for adding to github.com
+    pbcopy < ~/.ssh/id_rsa.pub
+    echo "SSH key copied to clipboard"
+fi
 
 echo ""
 echo "Install homebrew cask apps & fonts?  (y/n)"
